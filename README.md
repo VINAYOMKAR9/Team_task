@@ -69,7 +69,7 @@ cd Team_task
 
 ### 🔹 Step 1: Work on Your Feature Branch
 
-git checkout features/Astick
+git checkout features/Vinay
 # ... make your code changes ...
 
 ### 🔹 Step 2: Stage and Commit Your Changes
@@ -93,7 +93,8 @@ git merge features/Vinay ( Please use your branch name for merge your code )
 
 # Resolve conflicts manually, then:
 git add .
-git commit -m "Resolved conflicts while merging features/Astick into Dev"
+git commit -m "Resolved conflicts while merging features/Vinay into Dev"
+("This the commit message so please give your commit message according to the requirement and please make sure your message should related to ypur work")
 
 ### 🔹 Step 5: Push the Updated `Dev` Branch to GitHub
 
