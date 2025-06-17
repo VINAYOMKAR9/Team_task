@@ -1,10 +1,7 @@
-from flask import Blueprint, render_template, request, redirect, url_for, flash , jsonify
+from flask import Blueprint
 
-bp = Blueprint('auth', __name__, url_prefix='/auth')
+auth_bp = Blueprint('auth', __name__)
 
-@bp.route('/login', methods='GET')
+@auth_bp.route('/')
 def login():
-
-        # Add login form handling logic here
-        return jsonify(msg = f' "Login logic not implemented yet", "info"')
-    # return jsonify(msg = 'abdo')
+    return "Login Page"
