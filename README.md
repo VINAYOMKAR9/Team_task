@@ -1,6 +1,6 @@
 # 🌐 Ferilion Portal
 
-**Ferilion Portal** is a web-based internal platform developed using **Python Flask**. It enables OTP-based authentication, trainee management, and role-specific dashboards for a smooth internal operation workflow.
+**Ferilion Portal** is a web-based internal platform Developed using **Python Flask**. It enables OTP-based authentication, trainee management, and role-specific dashboards for a smooth internal operation workflow.
 
 ---
 
@@ -20,7 +20,7 @@
 ferilion_portal/
 ├── fer_app/
 │ ├── init.py # App factory function
-│ ├── config.py # Configurations (dev, prod, test)
+│ ├── config.py # Configurations (Dev, prod, test)
 │ ├── models.py # SQLAlchemy models for User, Trainee, etc.
 │ ├── controllers/ # Business logic layer
 │ │ ├── auth_controller.py
@@ -54,3 +54,56 @@ Edit
 ```bash
 git clone https://github.com/VINAYOMKAR9/Team_task.git
 cd Team_task
+
+
+### 1. Git Workflow Guide
+
+## 📂 Branch Strategy
+
+- `main` → stays empty or protected (no code pushed here)
+- `Dev` → central integration branch
+- `features/<name>` → individual Developer branches
+
+
+## 👨‍💻 Developer Workflow
+
+### 🔹 Step 1: Work on Your Feature Branch
+
+git checkout features/Vinay
+# ... make your code changes ...
+
+### 🔹 Step 2: Stage and Commit Your Changes
+
+git add .
+git commit -m "Completed: Video upload functionality"
+git push origin features/Vinay ( Please use your branch name for push your code ) 
+
+
+### 🔹 Step 3: Switch to `Dev` and Pull the Latest Code
+
+git checkout Dev
+git pull origin Dev
+
+### 🔹 Step 4: Merge Your Feature Branch into `Dev`
+
+git merge features/Vinay ( Please use your branch name for merge your code ) 
+
+
+### ⚠️ If Merge Conflicts Occur
+
+# Resolve conflicts manually, then:
+git add .
+git commit -m "Resolved conflicts while merging features/Vinay into Dev"
+("This the commit message so please give your commit message according to the requirement and please make sure your message should related to ypur work")
+
+### 🔹 Step 5: Push the Updated `Dev` Branch to GitHub
+
+git push origin Dev
+
+✅ Your changes are now available to the whole team in the `Dev` branch.
+
+## ✅ Best Practices
+
+- Always pull the latest `Dev` before merging
+- Test thoroughly before pushing
+- Communicate with your team on major changes
