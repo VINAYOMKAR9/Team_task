@@ -1,0 +1,8 @@
+<h2>Uploaded Videos</h2>
+<ul>
+  {% for video in videos %}
+    <li>
+      <strong>{{ video.title }}</strong> — <a href="{{ url_for('trainee.stream_video', filename=video.filename) }}">Watch</a>
+    </li>
+  {% endfor %}
+</ul>

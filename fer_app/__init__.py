@@ -13,11 +13,11 @@ def create_app():
 
     # Import and register blueprints
     from fer_app.views.auth import auth_bp
-    # from fer_app.views.trainee import trainee_bp
+    from fer_app.views.trainee import trainee_bp
     # from fer_app.views.management import management_bp
 
     app.register_blueprint(auth_bp)
-    # app.register_blueprint(trainee_bp)
+    app.register_blueprint(trainee_bp)
     # app.register_blueprint(management_bp)
 
     # Create tables
